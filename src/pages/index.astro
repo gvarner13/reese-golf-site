@@ -7,23 +7,35 @@ import reesePhoto from "../IMG_6422.jpg";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <div class="container mx-auto px-4">
-      <div class="flex gap-4">
-        <div
-          class="max-h-96 basis-1/2 transition-all duration-300 cursor-pointer filter hover:grayscale"
-        >
-          <Image
-            src={reesePhoto}
-            widths={[240]}
-            sizes={`(max-width: 360px) 240px`}
-            alt="A bird sitting on a nest of eggs."
-            class="rounded-md"
-          />
+    <section class="h-screen">
+      <nav class="px-8 py-4">
+        <a href="#" class="text-3xl font-black text-[#dae85d]">rrv</a>
+      </nav>
+      <div class="flex justify-between p-8">
+        <div class="p-4 pb-14 bg-white w-52">
+          <div>
+            <Image
+              src={reesePhoto}
+              alt="Reese golfing"
+              class="object-cover aspect-square"
+            />
+          </div>
         </div>
-        <div class="basis-1/2">
-          <h1 class="text-6xl text-white">Reese Rowland-Varner</h1>
+        <div>
+          <h1 class="text-9xl font-black text-right text-[#dae85d]">
+            Golf <br /> Journey
+          </h1>
         </div>
       </div>
-    </div>
+      <div class="flex justify-end">
+        <div>
+          <p class="text-white">
+            Join me as I embark on my golf journey in High School.
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </section>
+    <section class="h-screen bg-[#dae85d]"></section>
   </main>
 </Layout>
