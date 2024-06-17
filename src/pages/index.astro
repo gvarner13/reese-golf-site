@@ -7,39 +7,34 @@ import reesePhoto from "../IMG_6422.jpg";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <nav class="px-8 py-4">
-      <a href="#" class="text-3xl font-black text-[#dae85d]">rrv</a>
+    <nav class="px-8 py-3">
+      <a href="#" class="text-4xl font-black text-[#dae85d]">rrv</a>
     </nav>
     <section
-      class="h-screen relative"
-      style="background-image: url('/image.png')"
+      class="h-screen bg-cover"
+      style="background-image: url('/golfHero.png')"
     >
-      <div class="container mx-auto absolute">
+      <div class="container mx-auto">
         <div class="flex justify-center gap-8 p-8">
-          <div class="p-2 bg-[#17aadf] w-1/4 rounded">
-            <div>
+          <div class="w-1/4">
+            <div class="p-4 bg-white">
               <Image
                 src={reesePhoto}
                 alt="Reese golfing"
-                class="object-cover rounded-sm"
+                class="object-cover"
               />
             </div>
           </div>
           <div class="w-min">
             <h1
-              class="text-[10rem] font-black text-right leading-[8rem] text-[#f6ff44] backdrop-blur-sm p-2 rounded"
+              class="text-[10rem] font-black text-right leading-[8rem] text-[#dae85d] p-2 rounded"
             >
               My Golf Journey
             </h1>
-          </div>
-        </div>
-        <div class="flex justify-end">
-          <div>
-            <p class="text-white text-lg">
+            <p class="p-2 text-white text-lg font-medium">
               Join me as I embark on my golf journey in High School.
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
