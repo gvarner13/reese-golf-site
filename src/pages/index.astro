@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import IconButton from "../components/IconButton.astro";
 import { Image } from "astro:assets";
 import reesePhoto from "../IMG_6422.jpg";
 ---
@@ -25,15 +26,18 @@ import reesePhoto from "../IMG_6422.jpg";
               />
             </div>
           </div>
-          <div class="w-min">
+          <div class="w-min flex flex-col gap-4">
             <h1
-              class="text-[10rem] font-black text-right leading-[8rem] text-[#dae85d] p-2 rounded"
+              class="text-[10rem] font-black text-right leading-[8rem] text-[#dae85d] p-2"
             >
               My Golf Journey
             </h1>
-            <p class="p-2 text-white text-lg font-medium">
+            <p class="p-2 text-white text-lg font-medium text-right">
               Join me as I embark on my golf journey in High School.
             </p>
+            <div class="flex justify-end gap-2">
+              <IconButton />
+            </div>
           </div>
         </div>
       </div>
