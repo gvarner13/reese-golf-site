@@ -23,11 +23,11 @@ import reesePhoto from "../IMG_6422.jpg";
     @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
     /* @import "normalize.css"; */
 
-    *,
+    /* *,
     *:after,
     *:before {
       box-sizing: border-box;
-    }
+    } */
 
     article {
       width: 600px;
@@ -58,7 +58,7 @@ import reesePhoto from "../IMG_6422.jpg";
       --y: 0;
     }
 
-    article > img:first-of-type {
+    /* article > img:first-of-type {
       filter: saturate(1.5) brightness(0.9);
       object-position: calc(-50% + (var(--x) * 30px))
         calc(43% + (var(--y) * -20px));
@@ -67,7 +67,7 @@ import reesePhoto from "../IMG_6422.jpg";
     article > img:last-of-type {
       object-position: calc(-50% + (var(--x) * 40px))
         calc(43% + (var(--y) * -40px));
-    }
+    } */
 
     article h3 {
       position: absolute;
@@ -148,20 +148,26 @@ import reesePhoto from "../IMG_6422.jpg";
     <nav class="px-8 py-3">
       <a href="#" class="text-4xl font-black text-[#dae85d]">rrv</a>
     </nav>
-    <section
-      class="h-screen bg-cover"
-      style="background-image: url('/golfHero.png')"
-    >
+    <section class="h-screen">
       <div class="container mx-auto">
         <div class="flex justify-center gap-8 p-8">
           <div class="w-1/4">
-            <div class="p-1 bg-[#dae85d] rounded-md">
+            <article>
               <Image
                 src={reesePhoto}
                 alt="Reese golfing"
-                class="object-cover rounded-lg"
+                class="object-cover rounded-3xl"
               />
-            </div>
+              <h3>Reese</h3>
+            </article>
+            <article>
+              <Image
+                src={reesePhoto}
+                alt="Reese golfing"
+                class="object-cover rounded-3xl"
+              />
+              <h3>Reese</h3>
+            </article>
           </div>
           <div class="w-min flex flex-col gap-4">
             <h1
@@ -209,7 +215,7 @@ import reesePhoto from "../IMG_6422.jpg";
         </div>
         <div>
           <article>
-            <img src="https://assets.codepen.io/605876/osaka-sky.jpeg" alt="" />
+            <img src="https://picsum.photos/900/1200" alt="" />
             <h3>Osaka</h3>
             <img
               src="https://assets.codepen.io/605876/osaka-tower.png"
