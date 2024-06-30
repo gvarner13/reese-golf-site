@@ -13,7 +13,7 @@ import greensShot from "../IMG_6436.jpg";
     <nav class="px-8 py-3">
       <a href="#" class="text-4xl font-black text-[#dae85d]">rrv</a>
     </nav>
-    <section class="h-screen">
+    <section class="min-h-screen">
       <div class="container mx-auto">
         <div class="flex gap-8 max-w-6xl mx-auto mt-4">
           <div>
@@ -50,35 +50,25 @@ import greensShot from "../IMG_6436.jpg";
               <IconButton />
             </div>
           </div>
-          <!-- <div class="flex gap-4 border border-red-600">
-            <img
-              src="https://picsum.photos/300/200"
-              alt=""
-              class="object-cover rounded-3xl h-64 w-64"
-            />
-            <img
-              src="https://picsum.photos/300/200"
-              alt=""
-              class="object-cover rounded-3xl h-64 w-64"
-            />
-          </div> -->
         </div>
       </div>
     </section>
-    <section class="h-screen bg-[#dae85d]">
+    <section class="min-h-screen bg-[#dae85d]">
       <div class="container mx-auto">
         <div class="flex pt-16">
           <div class="p-4">
             <div class="flex">
-              <h2 class="basis-1/4">About Me</h2>
+              <h2 class="basis-1/4 text-2xl font-black">About Me</h2>
               <p class="text-8xl font-black">Who Is <br /> Reese</p>
             </div>
             <p class="mt-8 w-1/2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequuntur quidem, quaerat a labore quas assumenda.
+              Reese has embarked on an exciting journey into the world of golf,
+              driven by a passion for the game and a dream to join her high
+              school's golf team. With determination and dedication, she is
+              honing her skills and striving to make her mark in the sport.
             </p>
           </div>
-          <div class="relative w-96 h-96 mx-auto">
+          <div class="relative h-96 mx-auto basis-1/2">
             <Image
               src={greensShot}
               alt="pretty green and flag"
@@ -90,6 +80,40 @@ import greensShot from "../IMG_6436.jpg";
                 alt="pretty green and flag"
                 class="object-cover rounded-3xl"
               />
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-end w-1/2">
+          <div class="w-3/4">
+            <h2 class="text-2xl font-black p-2">Courses I have played</h2>
+            <div
+              class="grid gap-1 grid-cols-2 auto-rows-auto overflow-y-auto max-h-96"
+            >
+              <div
+                class="p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#17aadf] hover:font-medium duration-300"
+              >
+                Cross Creek Golf Club
+              </div>
+              <div
+                class="p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#17aadf] hover:font-medium duration-300"
+              >
+                The Golf Club at Bradshaw Farm
+              </div>
+              <div
+                class="p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#17aadf] hover:font-medium duration-300"
+              >
+                Brookstone Golf & Country Club
+              </div>
+              <div
+                class="p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#17aadf] hover:font-medium duration-300"
+              >
+                Hawks Ridge Golf Club
+              </div>
+              <div
+                class="p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#17aadf] hover:font-medium duration-300"
+              >
+                Fairways of Canton Golf Club
+              </div>
             </div>
           </div>
         </div>
